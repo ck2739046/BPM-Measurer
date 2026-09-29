@@ -26,6 +26,8 @@
         <Company>GitHub: ck2739046/BPM-Measurer</Company>
         <!-- Windows 文件属性 → 版权 -->
         <Copyright>©Simon273 $([System.DateTime]::Now.ToString("yyyy.MM.dd_HH:mm:ss_UTCzzz"))</Copyright>
+        <!-- 仓库地址, About 面板的仓库链接从该元数据读取。 -->
+        <RepositoryUrl>https://github.com/ck2739046/BPM-Measurer</RepositoryUrl> 
     </PropertyGroup>
     <ItemGroup>
         <PackageReference Include="Un4seen.Bass" Version="2.4.18.2" />

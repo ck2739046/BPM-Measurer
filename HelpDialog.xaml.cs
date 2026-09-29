@@ -41,7 +41,8 @@ public partial class HelpDialog : Window
         AboutAuthorValue.Text = ExtractAuthor(asm);
         var repoUrl = ExtractRepoUrl(asm);
         RepoLinkText.Text = repoUrl;
-        RepoLink.NavigateUri = new Uri(repoUrl);
+        // csproj 未提供 <RepositoryUrl> 时 repoUrl 为空串, 保持空链接(NavigateUri 置空)
+        RepoLink.NavigateUri = Uri.TryCreate(repoUrl, UriKind.Absolute, out var repoUri) ? repoUri : null;
         AboutBuildTimeValue.Text = ExtractBuildTime(asm);
 
         // Default to the Help panel.
@@ -68,18 +69,11 @@ public partial class HelpDialog : Window
     }
 
     /// <summary>
-    /// Reads the repo URL from AssemblyTitleAttribute
-    /// (csproj maps &lt;AssemblyTitle&gt; to this attribute).
-    /// Falls back to the hard-coded repo URL when the attribute is not set.
+    /// Reads the repo URL from the assembly's RepositoryUrl metadata
     /// </summary>
     private static string ExtractRepoUrl(Assembly asm)
-    {
-        var attr = asm.GetCustomAttribute<AssemblyTitleAttribute>();
-        var title = attr?.Title;
-        if (string.IsNullOrEmpty(title))
-            return "https://github.com/ck2739046/BPM-Measurer";
-        return title;
-    }
+        => asm.GetCustomAttributes<AssemblyMetadataAttribute>()
+              .FirstOrDefault(a => a.Key == "RepositoryUrl")?.Value ?? "";
 
     /// <summary>
     /// Extracts the build timestamp baked into the assembly's copyright string

@@ -5,7 +5,7 @@
   <br>BPM-Measurer
 </h1>
 
-<h3>🎵 Viusal audio BPM measuring tool 🎵</h3>
+<h3>🎵 Visual audio BPM measuring tool 🎵</h3>
 
 <br>
 
