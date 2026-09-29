@@ -3,7 +3,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:lex="http://wpflocalizeextension.codeplex.com"
         lex:LocalizeDictionary.DesignCulture="zh-CN"
-        lex:ResxLocalizationProvider.DefaultAssembly="Bpm Measurer"
+        lex:ResxLocalizationProvider.DefaultAssembly="BPM-Measurer"
         lex:ResxLocalizationProvider.DefaultDictionary="Langs"
         Title="{lex:Loc HelpDlg_Title}"
         ResizeMode="CanResize"
@@ -171,7 +171,7 @@
                     <TextBlock Grid.Column="0" Text="{lex:Loc About_Repo}" Foreground="#FF666666" FontSize="12"/>
                     <TextBlock Grid.Column="1" FontSize="12">
                         <Hyperlink x:Name="RepoLink"
-                                   NavigateUri="https://github.com/ck2739046/Bpm-Measurer"
+                                   NavigateUri="https://github.com/ck2739046/BPM-Measurer"
                                    Foreground="#FF818CF8" TextDecorations="Underline"
                                    ToolTip="{lex:Loc About_OpenRepo_Tooltip}"
                                    RequestNavigate="RepoLink_RequestNavigate">

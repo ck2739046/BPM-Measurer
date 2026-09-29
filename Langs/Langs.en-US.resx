@@ -4,7 +4,7 @@
   <resheader name="version"><value>2.0</value></resheader>
   <resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
   <resheader name="writer"><value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
-  <data name="WindowTitle" xml:space="preserve"><value>BPM Measurer</value></data>
+  <data name="WindowTitle" xml:space="preserve"><value>BPM-Measurer</value></data>
   <data name="ImportAudio" xml:space="preserve"><value>Import Audio</value></data>
   <data name="NoAudio" xml:space="preserve"><value>No audio loaded</value></data>
   <data name="Play" xml:space="preserve"><value>Play</value></data>
@@ -76,7 +76,7 @@
   <data name="Help_Desc8" xml:space="preserve"><value>Redo operation</value></data>
   <data name="Help_Op9" xml:space="preserve"><value>Shift + Ctrl + Z</value></data>
   <data name="Help_Desc9" xml:space="preserve"><value>Redo operation (same)</value></data>
-  <data name="About_AppName" xml:space="preserve"><value>BPM Measurer</value></data>
+  <data name="About_AppName" xml:space="preserve"><value>BPM-Measurer</value></data>
   <data name="About_Tagline" xml:space="preserve"><value>Visual audio BPM measuring tool</value></data>
   <data name="About_Version" xml:space="preserve"><value>Version</value></data>
   <data name="About_Author" xml:space="preserve"><value>Author</value></data>

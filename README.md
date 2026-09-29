@@ -2,7 +2,7 @@
 
 <h1>
   <img src="icon/icon.svg" width="110" alt="logo">
-  <br>BPM Measurer
+  <br>BPM-Measurer
 </h1>
 
 <h3>🎵 Viusal audio BPM measuring tool 🎵</h3>
@@ -13,12 +13,12 @@ A tool for measuring **BPM timing** of audio, with waveform/spectrogram visualiz
 
 <br>
 
-![](https://img.shields.io/github/stars/ck2739046/Bpm-Measurer?label=Stars)
-![](https://img.shields.io/github/downloads/ck2739046/Bpm-Measurer/total?label=Downloads)
+![](https://img.shields.io/github/stars/ck2739046/BPM-Measurer?label=Stars)
+![](https://img.shields.io/github/downloads/ck2739046/BPM-Measurer/total?label=Downloads)
 
-🔗 [**GitHub Repo**](https://github.com/ck2739046/Bpm-Measurer)
+🔗 [**GitHub Repo**](https://github.com/ck2739046/BPM-Measurer)
 &nbsp;•&nbsp;
-📥︎ [**Download Release**](https://github.com/ck2739046/Bpm-Measurer/releases/latest)
+📥︎ [**Download Release**](https://github.com/ck2739046/BPM-Measurer/releases/latest)
 &nbsp;•&nbsp;
 ▶️ [**Demo Video**](https://www.bilibili.com/video/BV1fD786hE3M)
 
@@ -48,7 +48,7 @@ A tool for measuring **BPM timing** of audio, with waveform/spectrogram visualiz
 ## Command-line Arguments
 
 ```
-Bpm Measurer.exe [--language=<lang>] [--audio=<path>] [--notify=<path>] [--parse_config=<path>]
+BPM-Measurer.exe [--language=<lang>] [--audio=<path>] [--notify=<path>] [--parse_config=<path>]
 ```
 
 | Argument | Description |
@@ -65,7 +65,7 @@ Both modes below are intended for the host **[HachimiDX](https://github.com/ck27
 ### Single `--notify=` (interactive embed mode)
 
 ```
-Bpm Measurer.exe --audio=<song.wav> --notify=<manifest.json>
+BPM-Measurer.exe --audio=<song.wav> --notify=<manifest.json>
 ```
 
 Launches the GUI so the user can edit timing. On a successful **Config Export**, writes a manifest `{ "config_path": ..., "audio_path": ... }` to the notify path and exits `0`. Closing without exporting exits `1`; a write failure exits `2`.
@@ -73,7 +73,7 @@ Launches the GUI so the user can edit timing. On a successful **Config Export**,
 ### `--notify=` + `--parse_config=` (headless export)
 
 ```
-Bpm Measurer.exe --parse_config=<config.txt> --notify=<out.json>
+BPM-Measurer.exe --parse_config=<config.txt> --notify=<out.json>
 ```
 
 Skips the GUI entirely: parses the config file and immediately writes `{ "global_offset": ..., "timing_points": [ { "beat_index": ..., "bpm": ..., "beats_per_bar": ... } ] }` to the notify path. If `--notify=` is missing, `--parse_config=` is silently ignored and the GUI starts normally.

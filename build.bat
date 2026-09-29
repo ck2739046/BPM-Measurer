@@ -14,18 +14,18 @@ rmdir /s /q "obj" 2>nul
 
 
 set RELEASE_DIR=bin\Release
-set TARGET_NAME=Bpm Measurer
+set TARGET_NAME=BPM-Measurer
 set TARGET_DIR=%RELEASE_DIR%\%TARGET_NAME%
 set SOURCE_DIR=%RELEASE_DIR%\net8.0-windows
 set FAILED=0
 
-REM 1. Delete the old "Bpm Measurer" folder if it exists
+REM 1. Delete the old "BPM-Measurer" folder if it exists
 if exist "%TARGET_DIR%" (
     echo Removing old "%TARGET_DIR%" ...
     rmdir /s /q "%TARGET_DIR%"
 )
 
-REM 2. Rename net8.0-windows to "Bpm Measurer"
+REM 2. Rename net8.0-windows to "BPM-Measurer"
 if exist "%SOURCE_DIR%" (
     echo Renaming "%SOURCE_DIR%" to "%TARGET_NAME%" ...
     ren "%SOURCE_DIR%" "%TARGET_NAME%"
@@ -61,7 +61,7 @@ if exist "%RELEASE_DIR%" (
     set FAILED=1
 )
 
-REM 4. Copy LICENSE into the "Bpm Measurer" app folder
+REM 4. Copy LICENSE into the "BPM-Measurer" app folder
 if exist "%TARGET_DIR%" (
     echo Copying LICENSE to "%TARGET_DIR%" ...
     copy /y "LICENSE" "%TARGET_DIR%\" >nul

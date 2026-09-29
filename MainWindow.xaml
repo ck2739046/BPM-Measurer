@@ -4,7 +4,7 @@
         xmlns:lex="http://wpflocalizeextension.codeplex.com"
         xmlns:local="clr-namespace:BpmMeasurer.Controls"
         lex:LocalizeDictionary.DesignCulture="zh-CN"
-        lex:ResxLocalizationProvider.DefaultAssembly="Bpm Measurer"
+        lex:ResxLocalizationProvider.DefaultAssembly="BPM-Measurer"
         lex:ResxLocalizationProvider.DefaultDictionary="Langs"
         Title="{lex:Loc WindowTitle}" Height="600" Width="900"
         WindowStartupLocation="CenterScreen"

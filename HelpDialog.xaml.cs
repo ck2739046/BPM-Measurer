@@ -77,7 +77,7 @@ public partial class HelpDialog : Window
         var attr = asm.GetCustomAttribute<AssemblyTitleAttribute>();
         var title = attr?.Title;
         if (string.IsNullOrEmpty(title))
-            return "https://github.com/ck2739046/Bpm-Measurer";
+            return "https://github.com/ck2739046/BPM-Measurer";
         return title;
     }
 

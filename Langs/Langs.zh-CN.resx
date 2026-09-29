@@ -76,7 +76,7 @@
   <data name="Help_Desc8" xml:space="preserve"><value>重做操作</value></data>
   <data name="Help_Op9" xml:space="preserve"><value>Shift + Ctrl + Z</value></data>
   <data name="Help_Desc9" xml:space="preserve"><value>重做操作 (同上)</value></data>
-  <data name="About_AppName" xml:space="preserve"><value>BPM Measurer</value></data>
+  <data name="About_AppName" xml:space="preserve"><value>BPM-Measurer</value></data>
   <data name="About_Tagline" xml:space="preserve"><value>可视化音频 BPM 测速工具</value></data>
   <data name="About_Version" xml:space="preserve"><value>版本</value></data>
   <data name="About_Author" xml:space="preserve"><value>作者</value></data>

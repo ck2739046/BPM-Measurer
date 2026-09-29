@@ -1,6 +1,6 @@
 # 配置导入手动测试清单
 
-> 操作：启动 `Bpm Measurer.exe` → 先加载任意音频（如 `test\Galaxy Blaster.ogg`）→ 点击 **"导入配置"** 按钮 → 选择对应 `.txt` 文件 → 观察弹窗。
+> 操作：启动 `BPM-Measurer.exe` → 先加载任意音频（如 `test\Galaxy Blaster.ogg`）→ 点击 **"导入配置"** 按钮 → 选择对应 `.txt` 文件 → 观察弹窗。
 
 > 所有错误弹窗标题均为 `配置文件解析失败。`（中文）/ `Failed to parse config file.`（英文），正文为具体错误原因。
 

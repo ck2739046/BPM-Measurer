@@ -86,7 +86,7 @@ public partial class App : Application
             }
         }
 
-        // 兼容位置参数(拖入 exe 图标 / `Bpm Measurer.exe "song.mp3"`):
+        // 兼容位置参数(拖入 exe 图标 / `BPM-Measurer.exe "song.mp3"`):
         // --audio= 优先,仅在其未提供时取第一个位置参数。
         if (string.IsNullOrEmpty(StartupAudioPath))
         {

@@ -1,2 +1,2 @@
 @echo off
-start "" "%~dp0Bpm Measurer\Bpm Measurer.exe" --language=en_us
+start "" "%~dp0BPM-Measurer\BPM-Measurer.exe" --language=en_us
